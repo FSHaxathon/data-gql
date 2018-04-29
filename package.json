@@ -4,7 +4,8 @@
   "description": "Who are you fam?",
   "main": "index.js",
   "scripts": {
-    "start": "node server"
+    "start": "node server",
+    "deploy": "sh ./scripts/deploy.sh"
   },
   "repository": {
     "type": "git",

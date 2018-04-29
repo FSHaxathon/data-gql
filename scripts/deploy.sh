@@ -33,12 +33,6 @@ trap cleanup_at_exit EXIT
 # but it needs to match the name of the branch we specify when we push to our heroku remote.
 git checkout -b deploy
 
-# webpack will run in "production mode"
-webpack -p
-
-# "force" add the otherwise gitignored build files
-git add -f public/bundle.js public/bundle.js.map
-
 # create a commit, even if nothing changed
 git commit --allow-empty -m 'Deploying'
 
