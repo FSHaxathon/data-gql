@@ -32,4 +32,4 @@ app.use(
   })
 )
 
-app.listen(PIRT, () => console.log(`Serving GraphQL on ${PORT}`))
+app.listen(PORT, () => console.log(`Serving GraphQL on ${PORT}`))
