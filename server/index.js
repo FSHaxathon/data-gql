@@ -6,7 +6,7 @@ const schema = require('./schema')
 
 const axios = require('axios')
 const legacyUrl = 'https://evening-dusk-76317.herokuapp.com'
-const PORT = process.env.port || 3999
+const PORT = process.env.PORT || 3999
 
 const getPersonById = async id => {
   if (typeof id === 'object') return id
